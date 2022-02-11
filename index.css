@@ -4,3 +4,10 @@
     justify-content: space-between;
 }
 
+.date-time {
+    background-color: orange;
+    color: white;
+    width: 300px;
+    border: 1px solid black;
+}
+
