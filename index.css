@@ -1,0 +1,6 @@
+.clock, .date {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+

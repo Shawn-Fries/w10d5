@@ -20,13 +20,18 @@ class Clock extends React.Component {
     }
 
     render() {
-        console.log(this.state.time)
+        // console.log(this.state.time)
         return (
            
             <div>
                 <h1>Clock</h1>
-                <div>
-                    {this.state.time.getHours()}:{this.state.time.getMinutes()}:{this.state.time.getSeconds()}
+                <div className="clock">
+                    <div>Time</div>
+                    <div>{this.state.time.getHours()}:{this.state.time.getMinutes()}:{this.state.time.getSeconds()}</div>
+                </div>
+                <div className="date">
+                    <div>Date</div>
+                    <div>{this.state.time.getFullYear()}-{this.state.time.getMonth()}-{this.state.time.getDate()}</div>
                 </div>
 
 
