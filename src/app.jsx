@@ -4,26 +4,34 @@ import Tabs from "../frontend/tabs"
 
 const App = function(props) {
     console.log(props);
-    const titles = [
-        "one",
-        "two",
-        "three"
+    // const titles = [
+    //     "one",
+    //     "two",
+    //     "three"
+    // ]
+
+    // const contents = [
+    //     "this is one",
+    //     "this is two",
+    //     "this is three",
+    // ]
+    const tabs = [
+        {title: "one", content: 'this is one'},
+        {title: "two", content: 'this is two'},
+        {title: "three", content: 'this is three'}
     ]
 
-    const contents = [
-        "this is one",
-        "this is two",
-        "this is three",
-    ]
     return (<div>
         <Clock />
-        <ul>
-            {titles.map((title,i) => {
-                return <Tabs key={title} title={title} content={contents[i]}/>
-            })}
-        </ul>
+        <Tabs tabProps={tabs}/>
     </div>)
 }
 
 
-export default App;
+export default App;      
+
+/* <ul>
+{titles.map((title,i) => {
+    return <Tabs key={title} title={title} content={contents[i]}/>
+})}
+</ul> */
